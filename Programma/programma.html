@@ -1,12 +1,31 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Degvielas izmaksu kalkulators</title>
+<html lang="lv">
+<head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="index.css" type="text/css">
-    <script type="text/javascript" src="./funkcijas.js"></script>
-  </head>
-  <body>
-
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degvielas Izmaksu Kalkulators</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-container">
+            <label for="consumption">Ievadi transportlīdzekļa degvielas patēriņu (L/100km) (piem. "5"):</label>
+            <input type="number" id="consumption" class="input-box">
+        </div>
+        <div class="input-container">
+            <label for="price">Ievadi degvielas cenu (EUR) (piem. "1.234"):</label>
+            <input type="number" id="price" class="input-box">
+        </div>
+        <div class="input-container">
+            <label for="distance">Ievadi kilometru skaitu (piem. "100"):</label>
+            <input type="number" id="distance" class="input-box">
+        </div>
+        <button onclick="calculate()">Aprēķināt</button>
+        <div id="output" class="output-box">
+            <label for="fuelCost">Degviela izmaksās:</label>
+            <span id="fuelCost"></span>
+        </div>
+    </div>
+    <script src="programma.js"></script>
+</body>
 </html>
