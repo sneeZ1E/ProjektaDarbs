@@ -1,1 +1,1 @@
-# ProjektaDarbs
+Degvielas izmaksu kalkulators
